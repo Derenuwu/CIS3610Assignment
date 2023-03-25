@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+
+<body style="background-color:#ffccff">
+
+    <audio id="myAudio">
+        <source src="smoke.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <audio id="myAudio2">
+        <source src="floating.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      
+      <audio id="myAudio3">
+        <source src="waterfall.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <script>
+      var x = document.getElementById("myAudio"); 
+      var y = document.getElementById("myAudio2");
+      var z = document.getElementById("myAudio3");
+
+
+      function playAudio() { 
+        x.play(); 
+      } 
+
+      function playAudio2() { 
+        y.play(); 
+      }
+      function playAudio3() { 
+        z.play(); 
+      }
+      
+      function pauseAudio() { 
+        x.pause(); 
+      } 
+
+      function pauseAudio2() { 
+        y.pause(); 
+      } 
+
+      function pauseAudio2() { 
+        y.pause(); 
+      } 
+
+      function pauseAudio3() { 
+        z.pause(); 
+      } 
+      </script>
+
+
+    <table style="background-color:#3399ff;margin-left:auto;margin-right:auto;">
+        <tr>
+        <th>Music Title</th>
+        <th>Play</th> 
+        <th>Pause</th>
+        </tr>
+        <tr>
+        <td>Smoke</td>
+        <td><button onclick="playAudio()" type="button">Play Audio</button></td>
+        <td><button onclick="pauseAudio()" type="button">Pause Audio</button></td>
+        </tr>
+        <tr>
+        <td>Floating Abstract</td>
+        <td><button onclick="playAudio2()" type="button">Play Audio</button></td>
+        <td><button onclick="pauseAudio2()" type="button">Pause Audio</button></td>
+        </tr>
+        <tr>
+        <td>Waterfall</td>
+        <td><button onclick="playAudio3()" type="button">Play Audio</button></td>
+        <td><button onclick="pauseAudio3()" type="button">Pause Audio</button></td>
+        </tr>
+        <tr>
+        <td style="text-align:center"></td>
+        
+        </tr>
+        </table>
+
+       
+          
+
+        
+
+        
+
+        
+
+</body>
+</html>
