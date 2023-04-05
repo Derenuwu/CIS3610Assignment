@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>DATA CHART</title>
+<style type="text/css">
+  .chartBox{
+    width:400px;
+
+  }
+  
+  </style>
+<div class="chartBox">
+  <canvas id="myChart"></canvas>
+</div>
+
+<div class="chartBox">
+  <canvas id="barChart"></canvas>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const data={
+    labels: ["Apple", "Banana", "Grapes", "Kiwi", "Watermelon"],
+      datasets: [{
+        label: "People",
+        backgroundColor: ["red", "yellow","purple","#669900","green"],
+        data: [763,513,247,323,800]
+      }]};
+
+      const config = {
+        type: 'pie',
+    data,
+    options: {
+      title: {
+        display: true,
+        text: 'The favorite fruits'
+      }
+    }
+      };
+
+
+
+ 
+  const myChart = new Chart
+  (document.getElementById('myChart'),
+  config
+);
+const config2 = {
+        type: 'bar',
+    data,
+    options: {
+      title: {
+        display: true,
+        text: 'The favorite fruits'
+      }
+    }
+      };
+const barChart = new Chart
+  (document.getElementById('barChart'),
+  config2
+);
+
+
+</script>
+
+
+</head>
+<body>
+  
+
+</body>
+
+</html>
